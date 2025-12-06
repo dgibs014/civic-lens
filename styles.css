@@ -40,7 +40,7 @@ body.dark-mode {
 
 /* ///ADD/// Skip Link Styles */
 .skip-to-main-content {
-  left: 50%;
+  left: -10000px;
   position: absolute;
   transform: translateY(-100%);
   transition: transform 0.3s;
