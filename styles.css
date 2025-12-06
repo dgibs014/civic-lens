@@ -85,7 +85,7 @@ body.dark-mode {
   cursor: pointer;
 }
 
-/* ///ADD/// Skip Link Styles */
+/* Skip Link Styles */
 .skip-to-main-content {
   left: -10000px;
   position: absolute;
@@ -101,11 +101,80 @@ body.dark-mode {
   left: 50%;
 }
 /* ///ADD/// Navigation Styles */
+nav ul {
+  display: grid;
+}
+
+nav a {
+  display: grid;
+  padding: 1rem;
+  text-decoration: none;
+  align-items: center;
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+  text-transform: uppercase;
+  max-width: fit-content;
+  gap: 1rem;
+  align-items: left;
+}
+
+nav a:hover {
+  background-color: var(--blue-bulletin);
+  border-color: var(--news-flash);
+  border-width: 1px;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 
 
 /* ///ADD/// Global Layout Styles */
+body {
+  display: grid;
+  grid-template-areas: 
+    "head"
+    "main"
+    "foot";
+}
+
+header {
+  grid-area: head;
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
+}
+
+main {
+  grid-area: main;
+  /*display: grid;
+  grid-template-columns: ;*/
+}
+
+footer {
+  grid-area: foot;
+}
 
 /* ///ADD/// Global Text Styles */
+h1, h2, h3, blockquote {
+  font-family: Merriweather, serif;
+}
+
+blockquote {
+  align: center;
+}
+
+.tagline {
+  font-family: Merriweather, serif;
+}
+
+form {
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+  padding: 10px;
+}
+
 
 
 /* ///ADD/// medium styles 620px */
@@ -118,7 +187,9 @@ body.dark-mode {
 
 
 /* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
+#theme-toggle {
 
+}
 
 /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
 @supports (selector(:has(*))) {
