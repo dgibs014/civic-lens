@@ -92,8 +92,8 @@ body.dark-mode {
   transform: translateY(-100%);
   transition: transform 0.3s;
   background: var(--news-flash);
-  color: var(--truth-text);
-  height: 30px;
+  color: var(--watchdog-white);
+  height: 20px;
   padding: 10px;
 }
 .skip-to-main-content:focus {
@@ -101,6 +101,7 @@ body.dark-mode {
   left: 50%;
 }
 /* ///ADD/// Navigation Styles */
+
 
 /* ///ADD/// Global Layout Styles */
 
