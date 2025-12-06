@@ -182,6 +182,7 @@ section {
 .bulletin {
   background-color: var(--news-flash);
   color: var(--watchdog-white);
+  
 }
 
 footer {
@@ -235,13 +236,19 @@ form {
 
 
 /* ///ADD/// medium styles 620px */
-
+@media only screen and (min-width: 320px) and (max-width: 620px) {
+  grid-template-columns: 1fr 1fr;
+}
 
 /* ///ADD/// large styles 920px */
-
+@media only screen and (min-width: 621px) and (max-width: 920px) {
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
 /* ///ADD/// x-large styles 1024px */
-
+@media only screen and (min-width: 921px) and (max-width: 1024px) {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
 /* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
 #theme-toggle {
