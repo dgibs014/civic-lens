@@ -51,6 +51,7 @@ body.dark-mode {
 }
 .skip-to-main-content:focus {
   transform: translateY(0%);
+  left: 50%;
 }
 /* ///ADD/// Navigation Styles */
 
