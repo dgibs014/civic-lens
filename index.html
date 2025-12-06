@@ -94,23 +94,63 @@
         
       Stay Informed. Stay Empowered.
         Receive text messages with the news you want to know.
-        
-        Name
-        
-        Mobile
-        
-        Notification Preferences
-        
-        Breaking News
-        Politics
-        Weather
-        Sports
-        Entertainment
-        World
-        Financial
-        
-        Subscribe
-      
+        <form action="post" method="https://wp.zybooks.com/form-viewer.php">
+          <div title="name">
+            <label for="name">Name
+              <span aria-hidden="true" class="required">*</span>
+            </label>
+              <input id="name" type="text" placeholder="Name" required>
+          </div>
+
+          <div title="phone">
+            <label for="phone">Mobile
+              <span aria-hidden="true" class="required">*</span>
+            </label>
+              <input id="phone" type="tel" required>
+          </div>
+          
+          <div title="preferences">
+            <fieldset>
+              <legend>Notification Preferences
+                <span aria-hidden="true" class="required">*</span>
+              </legend>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="breaking news" name="preferences" value="Breaking News" />
+                    <label for="breaking news">Breaking News</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="politics" name="preferences" value="Politics" />
+                    <label for="politics">Politics</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="weather" name="preferences" value="Weather" />
+                    <label for="weather">Weather</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="sports" name="preferences" value="Sports" />
+                    <label for="">Sports</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="entertainment" name="preferences" value="Entertainment" />
+                    <label for="">Entertainment</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="world" name="preferences" value="World" />
+                    <label for="">World</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="financial" name="preferences" value="Financial" />
+                    <label for="">Financial</label>
+                  </li>
+                </ul>
+            </fieldset>
+          </div>
+
+          <div title="subscribe">
+            <input id="subscribe" type="submit" value="Subscribe">
+          </div>
+        </form>
       Follow Us
         Twitter/X
         Instagram
